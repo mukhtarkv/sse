@@ -25,7 +25,7 @@ defmodule SSE do
   end
 
   @doc """
-  Serv the SSE stream
+  Serve the SSE stream
   """
   @spec stream(conn(), topics_with_chunk(), matcher()) :: conn()
   defdelegate stream(conn, data, matcher \\ {SSE, {}}),
